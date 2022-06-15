@@ -66,6 +66,9 @@ input[type=password]{
     color: white;
     font-size: 15px;
 }
+.btn-butts:hover{
+    color: white;
+}
 .btn-butt{
     border-radius: 50px;
     padding: 10px 33% 10px 33% !important;
