@@ -12,7 +12,7 @@
 }
 .body{
     background: url("image/bg.png") center;
-    backdrop-filter: blur(2.5px);
+    backdrop-filter: blur(3px);
     height: 100vh;
 }
 .btn-modal{
@@ -39,7 +39,7 @@
 input[type=text]{
     margin-top: 20px;
     padding: 15px 0px 20px 0px;
-    width: 90%;
+    width: 100%;
     border: none;
     border-bottom: 1px solid #000;
 }
@@ -54,15 +54,26 @@ input[type=password]:focus{
 input[type=password]{
     margin-top: 0px;
     padding: 15px 0px 20px 0px;
-    width: 90%;
+    width: 100%;
     border: none;
     border-bottom: 1px solid #000;
     box-shadow: none;
 }
-.butt{
-    float: right;
-    margin-bottom: 20px;
-    margin-top: 20px;
+.btn-butts{
+    border-radius: 50px;
+    padding: 10px 43% 10px 43% !important;
+    background: #0f67ffc2;
+    color: white;
+    font-size: 15px;
+}
+.btn-butt{
+    border-radius: 50px;
+    padding: 10px 33% 10px 33% !important;
+    border: 2px solid #0f67ffc2;
+    margin-bottom: 30px !important;
+}
+.stay{
+    font-size: 15px;
 }
 .modal-content{
     width: 85%;
@@ -74,6 +85,9 @@ input[type=password]{
 .attach{
     width: 80%;
 }
+::placeholder{
+    font-size: 15px;
+}
 
 
 @media (max-width: 576px) {
@@ -84,9 +98,6 @@ input[type=password]{
         font-weight: 600;
         margin-top: 100% !important;
         margin-bottom: 100% !important;
-    }
-    .attach{
-        width: 40%;
     }
     .modal-content{
         margin-top: 30px;
@@ -102,7 +113,6 @@ input[type=password]{
         margin-top: 130px;
         width: 50%;
     }
-
     }
 
    @media (max-width: 768px) {
@@ -148,6 +158,12 @@ input[type=password]{
     }
     input[type=password]{
         width: 100%;
+    }
+    .btn-butts{
+        padding: 10px 185px 10px 185px !important;
+    }
+    .btn-butt{
+        padding: 10px 145px 10px 145px !important;
     }
       }
   @media (max-width: 1200px) { 

